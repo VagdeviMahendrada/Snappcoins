@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: general-module-service
+  labels:
+    app: general-module-service
+    service: general-module-service
+spec:
+  selector:
+    app: general-module-service
+  ports:
+    - port: 3002
+      name: http

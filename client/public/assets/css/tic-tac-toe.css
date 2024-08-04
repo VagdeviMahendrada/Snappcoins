@@ -1,0 +1,102 @@
+.title {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5%;
+}
+
+.display {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.tile-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.tile {
+  border: 1px solid white;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.playerX {
+  color: #47e0a3;
+}
+
+.playerO {
+  color: #498afb;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.controls button {
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.restart {
+  background-color: #498afb;
+}
+
+#game-coins-message {
+  margin-top: 1rem;
+  font-size: medium;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#reset,
+#add-to-wallet {
+  width: 30%;
+  background-color: #ff0071;
+  margin-bottom: 3rem;
+}
+
+.rules-container {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 15px;
+  text-align: left;
+}
+
+.prize-info {
+  margin-top: 20px;
+  font-size: medium;
+  color: #ffffff;
+}
+
+.prize-info strong {
+  color: #ff0071;
+}

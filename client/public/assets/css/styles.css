@@ -1,0 +1,21 @@
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.form-wrapper form {
+    position: absolute;
+    top: 50px;
+    width: 50%;
+}
+
+.otp-verify {
+    height: 100vh;
+
+}
+
+.input1 {
+    width: 50px;
+    border-radius: 0%;
+}

@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: merchant-module-deployment
+  labels:
+    app: merchant-module-service
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: merchant-module-service
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: merchant-module-service
+        version: v1
+    spec:
+      serviceAccountName: merchant-serviceaccount
+      containers:
+        - name: merchant-module-service
+          image: 083118395813.dkr.ecr.ap-south-1.amazonaws.com/merchant-demo:latest
+          ports:
+            - containerPort: 3003
+          env:
+            - name: MONGO_URI
+              value: "mongodb+srv://Incrivelsoft:Incrivelsoft%40sh@smarthealth.nwut0dh.mongodb.net/test?retryWrites=true&w=majority"
+            - name: ACCESS_TOKEN_SECRET
+              value: "$2b$10$ihwmWDEir5KPienVM1Zoh.cECTKt.lm4eXRdeIBBL4/HPspblQhSW"
+            - name: AUTH_EMAIL
+              value: "Info@incrivelsoft.com"
+            - name: AUTH_PASS
+              value: "Incrivelsoft@emails"
+          resources:
+            requests:
+              cpu: "100m"
+            limits:
+              cpu: "500m"
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: merchant-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: merchant-module-deployment
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 80
+ 

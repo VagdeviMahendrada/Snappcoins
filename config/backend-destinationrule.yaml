@@ -1,0 +1,10 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: backend-destinationrule
+spec:
+  host: merchant-module-service
+  subsets:
+    - name: version-1
+      labels:
+        version: v1

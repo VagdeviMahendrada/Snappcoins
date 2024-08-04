@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gamer-module-service
+  labels:
+   app: gamer-module-service
+   service: gamer-module-service
+spec:
+  selector:
+    app: gamer-module-service
+  ports:
+    - port: 3004
+      name: http

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gaming-vendor-module-service
+  labels:
+    app: gaming-vendor-module-service
+    service: gaming-vendor-module-service
+spec:
+  selector:
+    app: gaming-vendor-module-service
+  ports:
+    - port: 3001
+      name: http
+                                                                                                                                                                                                         

@@ -1,0 +1,324 @@
+/*-------- Blog --------*/
+.search_blog {
+  margin-bottom: 30px !important;
+}
+@media (max-width: 991px) {
+  .search_blog {
+    margin-top: 30px;
+  }
+}
+.search_blog .form-group input[type="submit"] {
+  border: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: var(--color-1);
+  color: #fff;
+  font-weight: 500;
+  height: 35px;
+  line-height: 28px;
+  padding: 0 10px;
+  border-radius: var(--border-radius-small);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.search_blog .form-group input[type="submit"]:hover {
+  color: #2a2a2a;
+  background-color: var(--color-3);
+}
+
+/*Blog Sidebar*/
+.alignleft {
+  float: left;
+  margin: 0 15px 10px 0;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+  position: relative;
+}
+.alignleft img {
+  width: auto;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.comments-list {
+  padding: 0;
+  list-style: none;
+}
+.comments-list h3 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 0 0 0;
+  margin: 0;
+  text-transform: capitalize;
+}
+.comments-list h3 a {
+  color: var(--body-text-color);
+}
+.comments-list h3 a:hover {
+  color: var(--color-3);
+}
+.comments-list li {
+  margin-bottom: 10px;
+  display: table;
+  width: 100%;
+}
+.comments-list li:last-child {
+  margin-bottom: 0;
+}
+.comments-list small {
+  color: #999;
+  text-transform: uppercase;
+}
+
+.widget-title {
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color-1);
+}
+.widget-title h4 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.widget-title.first {
+  padding-top: 0;
+}
+
+.widget {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+.widget ul.cats {
+  list-style: none;
+  padding: 0;
+}
+.widget ul.cats li {
+  padding: 0 0 5px 2px;
+  position: relative;
+}
+.widget ul.cats a {
+  color: var(--body-text-color);
+}
+.widget ul.cats a:hover {
+  color: var(--color-3);
+}
+.widget ul.cats a span {
+  position: absolute;
+  right: 0;
+}
+
+.tags a {
+  background-color: #333;
+  padding: 3px 10px;
+  font-size: 13px;
+  margin: 0 0 4px;
+  letter-spacing: 0.4px;
+  border-radius: var(--border-radius-small);
+  display: inline-block;
+  color: var(--body-text-color);
+}
+.tags a:hover {
+  background-color: var(--color-3);
+  color: #fff;
+}
+
+.search_blog .form-group {
+  position: relative;
+}
+.search_blog .form-group button[type="submit"] {
+  outline: none;
+  color: #444;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  background: none;
+  border: 0;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.search_blog .form-group button[type="submit"]:hover {
+  color: #ff0071;
+}
+
+/*Blog Post*/
+.singlepost {
+  background-color: var(--background-color-2);
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  padding: 30px 30px 1px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.singlepost figure {
+  margin: -30px -30px 30px -30px;
+}
+.singlepost h1 {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+@media (max-width: 767px) {
+  .singlepost h1 {
+    font-size: 21px;
+    font-size: 1.3125rem;
+  }
+}
+.singlepost p {
+  line-height: 1.8;
+}
+
+.postmeta {
+  padding-bottom: 10px;
+}
+.postmeta ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.postmeta ul li {
+  display: inline-block;
+  margin: 0 15px 5px 0;
+  color: #999;
+}
+.postmeta ul li i {
+  margin-right: 3px;
+}
+.postmeta ul li a {
+  color: #999;
+}
+.postmeta ul li a:hover {
+  color: var(--color-3);
+}
+.postmeta ul li a i {
+  margin-right: 3px;
+}
+
+.dropcaps p:first-child::first-letter {
+  color: #fff;
+  background-color: #ff0071;
+  float: left;
+  font-size: 64px;
+  font-size: 4rem;
+  line-height: 1;
+  margin: 10px 15px 0 0 !important;
+  padding: 12px;
+}
+
+#comments {
+  padding: 10px 0 0px 0;
+  margin-bottom: 30px;
+}
+#comments ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#comments ul li {
+  padding: 25px 0 0 0;
+  list-style: none;
+}
+#comments .replied-to {
+  margin-left: 35px;
+}
+@media (max-width: 767px) {
+  #comments .replied-to {
+    margin-left: 20px;
+  }
+}
+
+.avatar {
+  float: left;
+  margin-right: 25px;
+  width: 68px;
+  height: 68px;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .avatar {
+    float: none;
+    margin: 0 0 5px 0;
+  }
+}
+.avatar img {
+  width: 68px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.comment_right {
+  display: table;
+  background-color: var(--background-color-2);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  padding: 20px 20px 0 20px;
+  position: relative;
+}
+
+.comment_right:after, .comment_right:before {
+  right: 100%;
+  top: 30px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.comment_right:after {
+  background-color: transparent;
+  border-right-color: var(--background-color-2);
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+.comment_right:before {
+  border-color: transparent;
+  border-width: 16px;
+  margin-top: -16px;
+}
+
+.comment_info {
+  padding-bottom: 7px;
+}
+.comment_info span {
+  padding: 0 10px;
+}
+
+textarea.form-control {
+  height: 150px;
+}

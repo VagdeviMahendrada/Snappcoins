@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-service
+  labels:
+    app: client-service
+    service: client-service
+spec:
+  selector:
+    app: client-service
+  ports:
+    - port: 3000
+      name: http
+  

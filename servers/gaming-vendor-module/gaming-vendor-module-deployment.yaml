@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gaming-vendor-module-deployment
+  labels:
+    app: gaming-vendor-module-service
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gaming-vendor-module-service
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: gaming-vendor-module-service
+        version: v1
+    spec:
+      serviceAccountName: gaming-serviceaccount
+      containers:
+      - name: gaming-vendor-module-service
+        image: 083118395813.dkr.ecr.ap-south-1.amazonaws.com/gaming-vendor-demo:latest
+        ports:
+        - containerPort: 3001
+        resources:
+            requests:
+              cpu: "100m"
+            limits:
+              cpu: "500m"
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: gaming-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: gaming-vendor-module-deployment
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 80
+ 

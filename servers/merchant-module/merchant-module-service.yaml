@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: merchant-module-service
+  labels:
+    app: merchant-module-service
+    service: merchant-module-service
+spec:
+  selector:
+    app: merchant-module-service
+  ports:
+    - port: 3003
+      name: http

@@ -1,0 +1,1092 @@
+/* Fonts */
+@import url(icon_fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css);
+.box_why {
+  padding: 0 15px;
+  margin-top: 20px;
+}
+@media (max-width: 991px) {
+  .box_why {
+    text-align: center;
+  }
+}
+.box_why h3 {
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+.box_why figure {
+  margin-bottom: 25px;
+}
+
+/*Pricing tables*/
+.plans {
+  margin: 0px auto 30px;
+}
+.plans:before, .plans:after {
+  content: '';
+  display: table;
+}
+.plans:after {
+  clear: both;
+}
+
+.plan {
+  margin: 10px 0;
+  padding: 20px 20px 30px 20px;
+  text-align: center;
+  border: solid var(--border-color-1);
+  border-width: 1px 0 1px 1px;
+  box-shadow: 0 2px 4px rgba(3, 27, 78, 0.06);
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .plan {
+    border-width: 1px;
+  }
+}
+.plan:first-child {
+  margin-right: -5px;
+  margin-left: 5px;
+}
+@media (max-width: 991px) {
+  .plan:first-child {
+    margin: 0 0 15px 0;
+  }
+}
+.plan:last-child {
+  border-width: 1px;
+}
+
+.plan-title {
+  position: relative;
+  margin: -25px -25px 30px -25px;
+  padding: 30px 20px 5px 20px;
+  border: 1px dotted var(--border-color-1);
+  font-size: 16px;
+  font-size: 1rem;
+  background-color: var(--background-color-2);
+  color: #999;
+}
+.plan-title h3 {
+  margin-bottom: 0;
+}
+
+.plan-tall .plan-title {
+  background-color: #ff0071;
+  border-bottom: none;
+  color: #fff;
+}
+
+.plan-price {
+  margin: 0 auto 15px;
+  width: 110px;
+  height: 110px;
+  line-height: 115px;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  background: #444;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+ul.plan-features {
+  padding: 0;
+  margin: 0 0 20px 0;
+  line-height: 2.2;
+  list-style: none;
+}
+
+.plan-tall {
+  margin: 0;
+  background: var(--background-color-2);
+  border-radius: 10px;
+  margin-right: -5px;
+  position: relative;
+  z-index: 100;
+  border: solid #ff0071;
+  position: relative;
+}
+.plan-tall > .plan-price {
+  height: 130px;
+  width: 130px;
+  line-height: 135px;
+  font-size: 36px;
+  background: #ff0071;
+  -webkit-border-radius: 130px;
+  -moz-border-radius: 130px;
+  -ms-border-radius: 130px;
+  border-radius: 130px;
+}
+.plan-tall + .plan {
+  border-left: 0;
+}
+
+/*-------- 2.7 Pricing page --------*/
+.margin_tabs {
+  margin-top: -97px;
+}
+@media (max-width: 991px) {
+  .margin_tabs {
+    margin-top: -70px;
+  }
+}
+@media (max-width: 767px) {
+  .margin_tabs {
+    margin-top: -50px;
+  }
+}
+
+.tabs {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  padding-bottom: 60px;
+  z-index: 5;
+}
+.tabs nav {
+  text-align: center;
+  overflow: hidden;
+}
+.tabs nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.tabs nav ul li {
+  margin: 0 -4px 0 0;
+  display: block;
+  display: inline-block;
+  background: var(--background-color-2);
+  width: 33%;
+  text-align: left;
+  line-height: 1.3;
+}
+@media (max-width: 991px) {
+  .tabs nav ul li {
+    text-align: center;
+  }
+}
+.tabs nav ul li a {
+  padding: 25px 35px 25px 90px;
+  color: #999;
+  display: block;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  white-space: nowrap;
+  position: relative;
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  .tabs nav ul li a {
+    padding: 15px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+.tabs nav ul li a i {
+  position: absolute;
+  left: 35px;
+  top: 25px;
+  font-size: 38px;
+  font-size: 2.375rem;
+}
+@media (max-width: 991px) {
+  .tabs nav ul li a i {
+    display: none;
+  }
+}
+.tabs nav ul li a em {
+  display: block;
+  font-size: 16px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  .tabs nav ul li a em {
+    display: none;
+  }
+}
+.tabs nav ul li:first-child {
+  border-radius: 5px 0 0 0;
+  border-right: 2px solid var(--border-color-1);
+}
+.tabs nav ul li:last-child {
+  border-radius: 0 5px 0 0;
+  border-left: 2px solid var(--border-color-1);
+}
+.tabs nav ul li.tab-current {
+  background: var(--background-color-1);
+  z-index: 100;
+}
+.tabs nav ul li.tab-current:after {
+  right: auto;
+  left: 100%;
+  width: 4000px;
+}
+.tabs nav ul li.tab-current a {
+  color: var(--heading-color);
+}
+.tabs nav ul li.tab-current a i {
+  color: var(--color-1);
+}
+
+/* Content */
+.content section {
+  padding: 30px 0 0 0;
+  display: none;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.content section:before, .content section:after {
+  content: '';
+  display: table;
+}
+.content section.content-current {
+  display: block;
+}
+
+.content section:after {
+  clear: both;
+}
+
+.no-js .content section {
+  display: block;
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--border-color-1);
+}
+
+.box_pricing {
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid var(--border-color-1);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .box_pricing {
+    padding: 15px;
+  }
+}
+.box_pricing hr {
+  margin: 25px -30px;
+  border-color: #d2d8dd;
+}
+@media (max-width: 767px) {
+  .box_pricing hr {
+    margin: 25px -15px;
+  }
+}
+.box_pricing ul {
+  list-style: disc;
+  padding: 0 0 0 20px;
+  margin: 0 0 30px 0;
+}
+.box_pricing a {
+  background-color: #ff0071;
+  display: block;
+  color: #fff;
+  padding: 10px;
+  font-weight: 500;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.box_pricing a:hover {
+  color: #2a2a2a;
+  background-color: var(--color-3);
+}
+.box_pricing .price {
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+}
+.box_pricing .price sup {
+  font-size: 16px;
+  font-size: 1rem;
+}
+.box_pricing .price em {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #ccc;
+  font-weight: 400;
+}
+
+.box_faq {
+  position: relative;
+  padding-left: 50px;
+}
+.box_faq i {
+  font-size: 32px;
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  color: var(--color-1);
+}
+.box_faq h3 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+}
+
+.pricing-switcher {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pricing-switcher .fieldset {
+  display: inline-block;
+  position: relative;
+  padding: 2px;
+  border-radius: 50em;
+  border: 2px solid var(--border-color-1);
+}
+.pricing-switcher input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.pricing-switcher label {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  float: left;
+  width: 90px;
+  height: 40px;
+  line-height: 45px;
+  cursor: pointer;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.pricing-switcher .switch {
+  /* floating background */
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 40px;
+  width: 90px;
+  background-color: var(--color-3);
+  border-radius: 50em;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  color: #111;
+}
+.pricing-switcher input[type="radio"]:checked + label + .switch,
+.pricing-switcher input[type="radio"]:checked + label:nth-of-type(n) + .switch {
+  /* use label:nth-of-type(n) to fix a bug on safari with multiple adjacent-sibling selectors*/
+  -webkit-transform: translateX(86px);
+  -moz-transform: translateX(86px);
+  -ms-transform: translateX(86px);
+  -o-transform: translateX(86px);
+  transform: translateX(86px);
+}
+
+.no-js .pricing-switcher {
+  display: none;
+}
+
+.pricing-list > li {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .pricing-list {
+    margin: 3em 0 0;
+  }
+
+  .pricing-list:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .pricing-list > li {
+    width: 33.3333333333%;
+    float: left;
+  }
+
+  .with-margins .pricing-list > li {
+    width: 32.3333333333%;
+    float: left;
+    margin-right: 1.5%;
+  }
+
+  .with-margins .pricing-list > li:last-of-type {
+    margin-right: 0;
+  }
+}
+ul.pricing-wrapper,
+ul.pricing-features,
+ul.pricing-list {
+  list-style: none;
+  padding: 0;
+  padding: 0;
+}
+
+.pricing-wrapper {
+  /* this is the item that rotates */
+  position: relative;
+}
+
+.touch .pricing-wrapper {
+  /* fix a bug on IOS8 - rotating elements dissapear*/
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  perspective: 2000px;
+}
+
+.pricing-wrapper.is-switched .is-visible {
+  /* totate the tables - anticlockwise rotation */
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-animation: cd-rotate 0.5s;
+  -moz-animation: cd-rotate 0.5s;
+  animation: cd-rotate 0.5s;
+}
+
+.pricing-wrapper.is-switched .is-hidden {
+  /* totate the tables - anticlockwise rotation */
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-animation: cd-rotate-inverse 0.5s;
+  -moz-animation: cd-rotate-inverse 0.5s;
+  animation: cd-rotate-inverse 0.5s;
+  opacity: 0;
+}
+
+.pricing-wrapper.is-switched .is-selected {
+  opacity: 1;
+}
+
+.pricing-wrapper.is-switched.reverse-animation .is-visible {
+  /* invert rotation direction - clockwise rotation */
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-animation: cd-rotate-back 0.5s;
+  -moz-animation: cd-rotate-back 0.5s;
+  animation: cd-rotate-back 0.5s;
+}
+
+.pricing-wrapper.is-switched.reverse-animation .is-hidden {
+  /* invert rotation direction - clockwise rotation */
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-animation: cd-rotate-inverse-back 0.5s;
+  -moz-animation: cd-rotate-inverse-back 0.5s;
+  animation: cd-rotate-inverse-back 0.5s;
+  opacity: 0;
+}
+
+.pricing-wrapper.is-switched.reverse-animation .is-selected {
+  opacity: 1;
+}
+
+.pricing-wrapper > li {
+  background-color: var(--background-color-2);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Firefox bug - 3D CSS transform, jagged edges */
+  outline: 1px solid transparent;
+}
+
+.pricing-wrapper > li::after {
+  /* subtle gradient layer on the right - to indicate it's possible to scroll */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  pointer-events: none;
+}
+
+.pricing-wrapper > li.is-ended::after {
+  /* class added in jQuery - remove the gradient layer when it's no longer possible to scroll */
+  display: none;
+}
+
+.pricing-wrapper .is-visible {
+  /* the front item, visible by default */
+  position: relative;
+  z-index: 5;
+}
+
+.pricing-wrapper .is-hidden {
+  /* the hidden items, right behind the front one */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.pricing-wrapper .is-selected {
+  /* the next item that will be visible */
+  z-index: 3 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .pricing-wrapper > li::before {
+    /* separator between pricing tables - visible when number of tables > 3 */
+    content: '';
+    position: absolute;
+    z-index: 6;
+    left: -1px;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 50%;
+    width: 1px;
+    background-color: #b1d6e8;
+  }
+
+  .pricing-wrapper > li::after {
+    /* hide gradient layer */
+    display: none;
+  }
+
+  .popular .pricing-wrapper > li {
+    box-shadow: inset 0 0 0 3px #f53e7d;
+  }
+
+  .with-margins .pricing-wrapper > li,
+  .with-margins .popular .pricing-wrapper > li {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  :nth-of-type(1) > .pricing-wrapper > li::before {
+    /* hide table separator for the first table */
+    display: none;
+  }
+
+  .with-margins .pricing-wrapper > li {
+    border-radius: 4px 4px 6px 6px;
+  }
+
+  .with-margins .pricing-wrapper > li::before {
+    display: none;
+  }
+}
+.no-js .pricing-wrapper .is-hidden {
+  position: relative;
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .popular .pricing-wrapper > li::before {
+    /* hide table separator for .popular table */
+    display: none;
+  }
+
+  .popular + li .pricing-wrapper > li::before {
+    /* hide table separator for tables following .popular table */
+    display: none;
+  }
+
+  .popular .pricing-header h2 {
+    color: #f53e7d;
+  }
+}
+.pricing-header {
+  position: relative;
+  z-index: 1;
+  height: 80px;
+  padding: 1em;
+  pointer-events: none;
+  background-color: #A3D4FF;
+  color: #FFFFFF;
+}
+
+.pricing-header h2 {
+  margin-bottom: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+}
+
+.popular .pricing-header {
+  background-color: var(--color-1);
+}
+
+@media only screen and (min-width: 768px) {
+  .pricing-header {
+    height: auto;
+    padding: 1.9em 0.9em 1.6em;
+    pointer-events: auto;
+    text-align: center;
+    color: var(--body-text-color);
+    background-color: transparent;
+  }
+
+  .popular .pricing-header {
+    color: var(--color-1);
+    background-color: transparent;
+  }
+
+  .pricing-header h2 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    letter-spacing: 2px;
+  }
+}
+.currency,
+.value {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.duration {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.popular .duration {
+  color: #fff;
+}
+
+.duration::before {
+  content: '/';
+  margin-right: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .value {
+    font-size: 7rem;
+    font-weight: 300;
+  }
+
+  .currency,
+  .duration {
+    color: var(--body-text-color);
+  }
+
+  .popular .currency,
+  .popular .duration {
+    color: #f53e7d;
+  }
+
+  .currency {
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .duration {
+    font-size: 1.4rem;
+  }
+}
+.pricing-body {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.is-switched .pricing-body {
+  /* fix a bug on Chrome Android */
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .pricing-body {
+    overflow-x: visible;
+  }
+}
+.pricing-features {
+  width: 600px;
+}
+
+.pricing-features:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pricing-features li {
+  width: 100px;
+  float: left;
+  padding: 1.6em 1em;
+  font-size: 16px;
+  font-size: 1rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pricing-features em {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 768px) {
+  .pricing-features {
+    width: auto;
+  }
+
+  .pricing-features li {
+    float: none;
+    width: auto;
+    padding: 1em;
+  }
+
+  .popular .pricing-features li {
+    margin: 0 3px;
+  }
+
+  .pricing-features li:nth-of-type(2n+1) {
+    background-color: rgba(255, 255, 255, 0.03);
+    color: var(--body-text-color);
+  }
+
+  .pricing-features em {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .with-margins .popular .pricing-features li {
+    margin: 0;
+  }
+}
+.pricing-footer {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* on mobile it covers the .pricing-header */
+  height: 80px;
+  width: 100%;
+}
+
+.pricing-footer::after {
+  /* right arrow visible on mobile */
+  content: '';
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  background: url(../img/icon-small-arrow.svg);
+}
+
+@media only screen and (min-width: 768px) {
+  .pricing-footer {
+    position: relative;
+    height: auto;
+    padding: 1.8em 0;
+    text-align: center;
+  }
+
+  .pricing-footer::after {
+    /* hide arrow */
+    display: none;
+  }
+
+  .with-margins .pricing-footer {
+    padding-bottom: 0;
+  }
+}
+.btn_price {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  /* hide button text on mobile */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn_price {
+    position: static;
+    display: inline-block;
+    height: auto;
+    padding: 1.3em 3em;
+    color: var(--heading-color);
+    border-radius: 2px;
+    background-color: var(--background-color-2);
+    border-top: 1px solid var(--border-color-1);
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-indent: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .no-touch .btn_price:hover {
+    background-color: var(--color-3);
+    color: #111;
+  }
+
+  .popular .btn_price {
+    background-color: var(--color-1);
+  }
+
+  .no-touch .popular .btn_price:hover {
+    background-color: var(--color-3);
+    color: #111;
+  }
+
+  .with-margins .btn_price {
+    display: block;
+    padding: 1.7em 0;
+    border-radius: 0 0 4px 4px;
+  }
+}
+/* -------------------------------- 
+
+xkeyframes 
+
+-------------------------------- */
+@-webkit-keyframes cd-rotate {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(0);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -webkit-transform: perspective(2000px) rotateY(200deg);
+  }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(180deg);
+  }
+}
+@-moz-keyframes cd-rotate {
+  0% {
+    -moz-transform: perspective(2000px) rotateY(0);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -moz-transform: perspective(2000px) rotateY(200deg);
+  }
+  100% {
+    -moz-transform: perspective(2000px) rotateY(180deg);
+  }
+}
+@keyframes cd-rotate {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(0);
+    -moz-transform: perspective(2000px) rotateY(0);
+    -ms-transform: perspective(2000px) rotateY(0);
+    -o-transform: perspective(2000px) rotateY(0);
+    transform: perspective(2000px) rotateY(0);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -webkit-transform: perspective(2000px) rotateY(200deg);
+    -moz-transform: perspective(2000px) rotateY(200deg);
+    -ms-transform: perspective(2000px) rotateY(200deg);
+    -o-transform: perspective(2000px) rotateY(200deg);
+    transform: perspective(2000px) rotateY(200deg);
+  }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(180deg);
+    -moz-transform: perspective(2000px) rotateY(180deg);
+    -ms-transform: perspective(2000px) rotateY(180deg);
+    -o-transform: perspective(2000px) rotateY(180deg);
+    transform: perspective(2000px) rotateY(180deg);
+  }
+}
+@-webkit-keyframes cd-rotate-inverse {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(-180deg);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -webkit-transform: perspective(2000px) rotateY(20deg);
+  }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(0);
+  }
+}
+@-moz-keyframes cd-rotate-inverse {
+  0% {
+    -moz-transform: perspective(2000px) rotateY(-180deg);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -moz-transform: perspective(2000px) rotateY(20deg);
+  }
+  100% {
+    -moz-transform: perspective(2000px) rotateY(0);
+  }
+}
+@keyframes cd-rotate-inverse {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(-180deg);
+    -moz-transform: perspective(2000px) rotateY(-180deg);
+    -ms-transform: perspective(2000px) rotateY(-180deg);
+    -o-transform: perspective(2000px) rotateY(-180deg);
+    transform: perspective(2000px) rotateY(-180deg);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -webkit-transform: perspective(2000px) rotateY(20deg);
+    -moz-transform: perspective(2000px) rotateY(20deg);
+    -ms-transform: perspective(2000px) rotateY(20deg);
+    -o-transform: perspective(2000px) rotateY(20deg);
+    transform: perspective(2000px) rotateY(20deg);
+  }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(0);
+    -moz-transform: perspective(2000px) rotateY(0);
+    -ms-transform: perspective(2000px) rotateY(0);
+    -o-transform: perspective(2000px) rotateY(0);
+    transform: perspective(2000px) rotateY(0);
+  }
+}
+@-webkit-keyframes cd-rotate-back {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(0);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -webkit-transform: perspective(2000px) rotateY(-200deg);
+  }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(-180deg);
+  }
+}
+@-moz-keyframes cd-rotate-back {
+  0% {
+    -moz-transform: perspective(2000px) rotateY(0);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -moz-transform: perspective(2000px) rotateY(-200deg);
+  }
+  100% {
+    -moz-transform: perspective(2000px) rotateY(-180deg);
+  }
+}
+@keyframes cd-rotate-back {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(0);
+    -moz-transform: perspective(2000px) rotateY(0);
+    -ms-transform: perspective(2000px) rotateY(0);
+    -o-transform: perspective(2000px) rotateY(0);
+    transform: perspective(2000px) rotateY(0);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -webkit-transform: perspective(2000px) rotateY(-200deg);
+    -moz-transform: perspective(2000px) rotateY(-200deg);
+    -ms-transform: perspective(2000px) rotateY(-200deg);
+    -o-transform: perspective(2000px) rotateY(-200deg);
+    transform: perspective(2000px) rotateY(-200deg);
+  }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(-180deg);
+    -moz-transform: perspective(2000px) rotateY(-180deg);
+    -ms-transform: perspective(2000px) rotateY(-180deg);
+    -o-transform: perspective(2000px) rotateY(-180deg);
+    transform: perspective(2000px) rotateY(-180deg);
+  }
+}
+@-webkit-keyframes cd-rotate-inverse-back {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(180deg);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -webkit-transform: perspective(2000px) rotateY(-20deg);
+  }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(0);
+  }
+}
+@-moz-keyframes cd-rotate-inverse-back {
+  0% {
+    -moz-transform: perspective(2000px) rotateY(180deg);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -moz-transform: perspective(2000px) rotateY(-20deg);
+  }
+  100% {
+    -moz-transform: perspective(2000px) rotateY(0);
+  }
+}
+@keyframes cd-rotate-inverse-back {
+  0% {
+    -webkit-transform: perspective(2000px) rotateY(180deg);
+    -moz-transform: perspective(2000px) rotateY(180deg);
+    -ms-transform: perspective(2000px) rotateY(180deg);
+    -o-transform: perspective(2000px) rotateY(180deg);
+    transform: perspective(2000px) rotateY(180deg);
+  }
+  70% {
+    /* this creates the bounce effect */
+    -webkit-transform: perspective(2000px) rotateY(-20deg);
+    -moz-transform: perspective(2000px) rotateY(-20deg);
+    -ms-transform: perspective(2000px) rotateY(-20deg);
+    -o-transform: perspective(2000px) rotateY(-20deg);
+    transform: perspective(2000px) rotateY(-20deg);
+  }
+  100% {
+    -webkit-transform: perspective(2000px) rotateY(0);
+    -moz-transform: perspective(2000px) rotateY(0);
+    -ms-transform: perspective(2000px) rotateY(0);
+    -o-transform: perspective(2000px) rotateY(0);
+    transform: perspective(2000px) rotateY(0);
+  }
+}

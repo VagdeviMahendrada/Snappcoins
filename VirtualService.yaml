@@ -1,0 +1,94 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: test
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - hosts:
+    - "*.reachmylifeline.com"
+    port:
+      number: 80
+      name: http
+      protocol: HTTP
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: client
+spec:
+  hosts:
+    - "client-service.reachmylifeline.com"
+  gateways:
+    - test
+  http:
+    -  route:
+       - destination:
+          host: client-service.default.svc.cluster.local
+          port:
+            number: 3000
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: gaming-vendor
+spec:
+  hosts:
+    - "gaming-vendor-module-service.reachmylifeline.com"
+  gateways:
+    - test
+  http:
+    -  route:
+       - destination:
+          host: gaming-vendor-module-service.default.svc.cluster.local
+          port:
+            number: 3001
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: merchant
+spec:
+  hosts:
+    - "merchant-module-service.reachmylifeline.com"
+  gateways:
+    - test
+  http:
+    -  route:
+       - destination:
+          host: merchant-module-service.default.svc.cluster.local
+          port:
+            number: 3003
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: general
+spec:
+  hosts:
+    - "general-module-service.reachmylifeline.com"
+  gateways:
+    - test
+  http:
+    -  route:
+       - destination:
+          host: general-module-service.default.svc.cluster.local
+          port:
+            number: 3002
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: gamer
+spec:
+  hosts:
+    - "gamer-module-service.reachmylifeline.com"
+  gateways:
+    - test
+  http:
+    -  route:
+       - destination:
+          host: gamer-module-service.default.svc.cluster.local
+          port:
+            number: 3004

@@ -1,0 +1,231 @@
+.hero_single.inner_pages.author_page {
+  height: 250px;
+}
+
+.main_profile {
+  background-color: var(--background-color-2);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-top: -170px;
+  position: relative;
+  z-index: 9;
+  text-align: center;
+}
+.main_profile .author {
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.main_profile .author .author_thumb figure {
+  width: 115px;
+  height: 115px;
+}
+.main_profile .author .author_thumb figure img {
+  width: 115px;
+  height: auto;
+}
+.main_profile .author .author_thumb.veryfied i {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.main_profile h1 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+}
+.main_profile .author_number {
+  color: var(--heading-color);
+  font-weight: 500;
+}
+.main_profile .author_number a {
+  color: #777;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.main_profile .author_number a:hover {
+  color: var(--color-3);
+}
+.main_profile ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.main_profile ul li span {
+  float: right;
+}
+
+.follow_buttons ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.follow_buttons ul li {
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.follow_buttons ul li a {
+  padding: 5px;
+  display: inline-block;
+  color: var(--body-text-color);
+}
+.follow_buttons ul li a:hover {
+  padding: 5px;
+  display: inline-block;
+  color: var(--color-3);
+}
+
+.follow_list ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.follow_list ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.follow_list ul li:last-child {
+  border-bottom: none;
+}
+.follow_list ul li .author {
+  justify-content: left;
+  text-align: left;
+}
+.follow_list ul li .author .author_thumb {
+  margin-right: 15px;
+}
+.follow_list ul li .author .author_thumb figure {
+  width: 60px;
+  height: 60px;
+}
+.follow_list ul li .author .author_thumb figure img {
+  width: 60px;
+  height: auto;
+}
+.follow_list ul li .author h6 {
+  color: var(--heading-color);
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+.follow_list ul li .author a {
+  margin-top: 10px;
+  display: inline-block;
+  border: 2px solid var(--border-color-1);
+  color: #777;
+  padding: 2px 8px;
+  font-weight: 500;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  border-radius: var(--border-radius-medium);
+}
+.follow_list ul li .author a:hover {
+  color: var(--color-3);
+}
+.follow_list ul li .thumbs_artwork {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .follow_list ul li .thumbs_artwork {
+    display: none;
+  }
+}
+.follow_list ul li .thumbs_artwork figure {
+  width: 110px;
+  margin: 0 4px;
+  overflow: hidden;
+  border-radius: var(--border-radius-medium);
+}
+
+/*-------- Profile edit --------*/
+.main_profile.edit_section {
+  padding-bottom: 1px;
+  margin-top: 0;
+}
+@media (max-width: 991px) {
+  .main_profile.edit_section {
+    margin-bottom: 60px;
+  }
+}
+.main_profile.edit_section h1 {
+  margin-bottom: 30px;
+}
+.main_profile.edit_section ul li {
+  margin-bottom: 10px;
+}
+.main_profile.edit_section ul li:last-child {
+  margin-bottom: 0;
+}
+.main_profile.edit_section ul li a {
+  color: var(--heading-color);
+}
+.main_profile.edit_section ul li a:hover, .main_profile.edit_section ul li a.active {
+  color: var(--color-3);
+}
+.main_profile.edit_section ul li a i {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.switch_wrapper {
+  border: 2px solid var(--border-color-1);
+  padding: 20px 70px 20px 20px;
+  border-radius: var(--border-radius-medium);
+}
+.switch_wrapper .form-switch {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.form-switch {
+  font-size: 180%;
+}
+.form-switch .form-check-input {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e");
+  background-color: var(--background-color-2);
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
+}
+.form-switch .form-check-input:checked {
+  background-color: var(--color-3);
+  border-color: var(--color-3);
+  box-shadow: none;
+}
+
+.file_upload {
+  background-color: var(--background-color-2);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 155px;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+}
+.file_upload input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.file_upload i {
+  font-size: 32px;
+  font-size: 2rem;
+}
+.file_upload:hover i {
+  color: var(--color-3);
+}
